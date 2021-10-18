@@ -6,7 +6,7 @@
         {
             "type": "shell",
             "label": "gcc build file",
-            "command": "/usr/bin/gcc",
+            "command": "/usr/bin/gcc-7",
             "args": [
                 "-g",
                 "${file}",
