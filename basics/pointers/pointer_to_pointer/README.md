@@ -1,7 +1,7 @@
 # Pointer to Pointer
 
 -   Pointer pointing to another pointer.
--   Declaration: `<type> ***name`
+-   Declaration: `<type> **name`
 -   Dereferencing: `**name`
 
 ```c
