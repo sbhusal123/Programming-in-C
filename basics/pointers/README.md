@@ -2,7 +2,7 @@
 
 -   Variable used to store the memory address of other variables
 
-![asd](https://i.ibb.co/T8nhc5x/a-drawio.png)
+![Pointer](../figures/pointer.png)
 
 -   **Initialization / Declare pointer variable:** `<type> *p;`
     -   for example `int *p` stores the location of integer variable.
