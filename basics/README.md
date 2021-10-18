@@ -18,7 +18,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "gcc build active file",
+            "label": "gcc build file",
             "command": "/usr/bin/gcc", // gcc path
             "args": [
                 "-g",
