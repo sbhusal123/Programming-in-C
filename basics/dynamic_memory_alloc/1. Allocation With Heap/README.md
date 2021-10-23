@@ -27,7 +27,6 @@
     p = NULL; // pointer is set to null, so that it can't be dereferenced
 
     p = (int *)malloc(sizeof(int)); // more memory reserved
-    *p = 400;
 ```
 
 ![DMA Malloc](../../figures/dma_malloc.png)
