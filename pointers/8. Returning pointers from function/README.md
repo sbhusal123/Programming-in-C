@@ -1,7 +1,7 @@
 # Returning Pointer From Function
 
 -   **Signature:** `<type>* func(args)`
--   **Example:** `int * sum(int &a, int *b)`
+-   **Example:** `int * sum(int *a, int *b)`
 
 ## 1. Example(Caveat):
 
