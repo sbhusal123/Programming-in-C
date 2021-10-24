@@ -37,7 +37,7 @@ strcpy(emp, "Jane Doe");
 
 ## Caveats: Memory allocated for structure
 
--Note that 1 byte=8bit
+-   Note that **1 byte=8bit**
 
 **i. Memory In 32bits archutecture**
 
