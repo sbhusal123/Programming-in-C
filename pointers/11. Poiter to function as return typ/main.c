@@ -25,16 +25,12 @@ void main()
     int x = 2, y = 3, result;
 
     // memory address used by perform_sum_and_return_callback to store sum
-    int *sum_result_ptr = (int *)malloc(sizeof(int));
+    int *sum;
 
-    sq_ptr square_function_pointer = perform_sum_and_return_callback(&x, &y, sum_result_ptr);
+    sq_ptr square_function_pointer = perform_sum_and_return_callback(&x, &y, &sum);
 
     // passing the sum result returned to the pointer returned from above function call.
-    result = square_function_pointer(*sum_result_ptr);
+    result = square_function_pointer(sum);
 
     printf("Sum of square of (%d,%d)= %d\n\n", x, y, result);
-
-    // free memory allocated
-    free(sum_result_ptr);
-    sum_result_ptr = NULL;
 }
