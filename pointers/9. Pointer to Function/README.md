@@ -4,7 +4,7 @@
 
 **Declaration Syntax:**
 
--   `<return_type>* (<type1>, <type2>) = func`
+-   `<return_type> (*<name>)(<arg_type1>,<arg_type2>) = func`
 
 If we have a function
 
