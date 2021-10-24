@@ -3,10 +3,10 @@
 -   **Signature:** `<type>* func(args)`
 -   **Example:** `int * sum(int &a, int *b)`
 
-## 1. Caveat:
+## 1. Example(Caveat):
 
-> If a called function is returning the pointer poinnting to the address of local variable.
-> This might return a garbage value.
+> If a called function is returning the pointer pointing to the address of local variable allocated in stack.
+> This return a garbage value, cause once the function finishes execution, it's gets cleared from stack.
 
 **Example:**
 
@@ -58,7 +58,7 @@ After Execution of sum_returning_pointer:
 -   Using the heap memory or other solution can be making z a global variable.
 -   If we're using a heap memory, DMA.
 -   Doing so, the z get's stored in the program heap memory whose allocation/deallocation can be controlled by programmer.
--   i.e. **z doesn't gets deallocated once the finishing of the execution of function.**
+-   i.e. **z doesn't gets deallocated once the function finished execution.**
 
 ```c
 int *sum_returning_pointer_dma(int *x, int *y)
@@ -74,7 +74,7 @@ int a = 1, b = 2;
 
 // p now points to the address in heap memory
 int *p = sum_returning_pointer_dma(&a, &b);
-printf("Sum = %d\n", *p);
+printf("Sum = %d\n", *p); // 3
 
 // free the memory
 free(p);
